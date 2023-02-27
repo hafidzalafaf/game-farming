@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+:root {
+    --white-color : #FFFFFF;
+    --pink-soft-color : #FCDDEC;
+    --purple-color :#4F2B87;
+    --purple-gradient-color : linear-gradient(130.35deg, #6345ED 17.35%, #DC39FC 78.23%);
+    --pink-gradient-color: linear-gradient(130.35deg, #FFFFFF 17.35%, #DC39FC 78.23%);
+}
+
+html{
+    transform: rotate(-90deg);
+    transform-origin: left top;
+    width: 100vh;
+    height: 100vw;
+    overflow-x: auto;
+    overflow-y: auto;
+    position: fixed;
+    top: 100%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.game-container {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 24px;
+    height: 100vw;
+    overflow: auto;
+}
+
+.game-container.main-bg{
+    background-image: url('../images/main-bg.png');
+}
+
+.title-1 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 44px;
+    letter-spacing: 0.04em;
+}
+
+.title-2 {
+    font-size: 25px;
+    font-weight: 900;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+}
+
+.title-4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+}
+
+.text-outline {
+    color: var(--pink-soft-color);
+    text-shadow:
+     3px  3px 0 var(--purple-color),
+    -1px -1px 0 var(--purple-color),  
+     1px -1px 0 var(--purple-color),
+    -1px  1px 0 var(--purple-color),
+     1px  1px 0 var(--purple-color);
+}
+
+.main-btn {
+    background:  var(--purple-gradient-color);
+    border-radius: 100px;
+    padding: 14px 22px;
+    color : var(--white-color);
+    text-decoration: none;
+    font-weight: 700;
+    position: relative;
+}
+
+.main-btn::before{
+    content: url('../images/button-bg.svg');
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    width: 60%;
+}
+
+
+/* HOME PAGE  */
+.home-screen .female-home {
+    position: absolute;
+    bottom: 5vh;
+    left: 13vh;
+    width: 29vh;
+}
+
+.home-screen .male-home {
+    position: absolute;
+    bottom: 5vh;
+    right: 25vh;
+    width: 30vh;
+}
+/* END HOME PAGE  */
