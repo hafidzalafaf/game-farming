@@ -89,8 +89,7 @@ body{
     content: url('../images/button-bg.svg');
     position: absolute;
     top: 5px;
-    right: 15px;
-    width: 60%;
+    right: 5px;
 }
 .z-index-0 {
     z-index: 0;
