@@ -24,7 +24,6 @@ html{
     right: 0;
 }
 
-
 body{
     font-family: 'Montserrat', sans-serif;
     scroll-behavior: smooth;
@@ -43,6 +42,10 @@ body{
     background-image: url('../images/main-bg.png');
 }
 
+.gradient-bg{
+    background: var(--purple-gradient-color);
+}
+
 .title-1 {
     font-size: 36px;
     font-weight: 700;
@@ -57,11 +60,25 @@ body{
     letter-spacing: 0.05em;
 }
 
+.title-3 {
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 24px;
+    letter-spacing: 0em;
+}
+
 .title-4 {
     font-family: 'Poppins', sans-serif;
     font-size: 12px;
     font-weight: 500;
     line-height: 18px;
+}
+
+.text-base {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.04em;
 }
 
 .text-outline {
@@ -74,6 +91,19 @@ body{
      1px  1px 0 var(--purple-color);
 }
 
+.text-gradient {
+    background: linear-gradient(130.35deg, #FFFFFF 17.35%, #DC39FC 78.23%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+/* text-shadow: 0px 2.07958px 4.15917px rgba(0, 0, 0, 0.14), 0px 2.07958px 2.07958px rgba(0, 0, 0, 0.12), 0px 2.07958px 4.15917px rgba(0, 0, 0, 0.2); */
+}
+
+.text-pink{
+    color : var(--pink-soft-color);
+}
+
 .main-btn {
     background:  var(--purple-gradient-color);
     border-radius: 100px;
@@ -83,6 +113,9 @@ body{
     font-weight: 700;
     position: relative;
     font-size: 14px;
+    border: 0;
+    box-shadow: 0 0 0 0;
+    min-width: 100px;
 }
 
 .main-btn::before{
@@ -91,6 +124,7 @@ body{
     top: 5px;
     right: 5px;
 }
+
 .z-index-0 {
     z-index: 0;
 }
@@ -98,6 +132,48 @@ body{
 .z-index-2 {
     z-index: 2;
 }
+
+/* modal */
+.game-modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    display: none;
+    transition: 0.3s ease-in-out all;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.game-modal.show {
+    display: flex;
+}
+
+.game-modal .modal-box {
+    width: 250px;
+    background: var(--purple-color);
+    border-radius: 26px;
+    border-bottom: 5px solid var(--blue-2-color);
+}
+
+.game-modal .content {
+    padding: 0 12px 18px 12px;
+}
+
+.game-modal .head {
+    border-radius: 26px 26px 0 0 ;
+    padding: 22px 12px ;
+}
+
+.game-modal .modal-close-btn {
+    position: absolute;
+    right: -13px;
+    top : -15px;
+}
+/* end modal */
 
 
 /* HOME PAGE  */
