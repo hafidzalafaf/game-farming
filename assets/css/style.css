@@ -389,13 +389,13 @@ body{
 .grass-1 {
     position: absolute;
     bottom: 10%;
-    right: 15%;
+    right: 20%;
 }
 
 .grass-2 {
     position: absolute;
     bottom: 40%;
-    right: 15%;
+    right: 20%;
 }
 
 .grass-3 {
@@ -414,14 +414,14 @@ body{
     position: absolute;
     bottom: 16%;
     width: 15%;
-    right: 7%;
+    right: 13%;
 }
 
 .animal-2 {
     position: absolute;
     bottom: 50%;
     width: 15%;
-    right: 7%;
+    right: 13%;
 }
 
 .animal-3 {
@@ -441,30 +441,30 @@ body{
 .fence-1 {
     position: absolute;
     top: 5%;
-    right: 15%;
+    right: 20%;
 }
 
 .fence-2 {
     position: absolute;
     top: 5%;
-    right: 30%;
+    right: 35%;
 }
 
 .fence-3 {
     position: absolute;
     bottom: 0;
-    right: 15%;
+    right: 20%;
 }
 
 .fence-4 {
     position: absolute;
     bottom: 0;
-    right: 30%;
+    right: 35%;
 }
 
 .btn-shop {
     position: absolute;
-    right: 4%;
+    right: 8%;
     bottom: 4%;
 }
 /* END MAIN ROOM */
