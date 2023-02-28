@@ -6,6 +6,7 @@
     --white-color : #FFFFFF;
     --pink-soft-color : #FCDDEC;
     --purple-color :#4F2B87;
+    --black-color: #343444;
     --purple-gradient-color : linear-gradient(130.35deg, #6345ED 17.35%, #DC39FC 78.23%);
     --pink-gradient-color: linear-gradient(130.35deg, #FFFFFF 17.35%, #DC39FC 78.23%);
 }
@@ -38,13 +39,18 @@ body{
     background-position: center;
     padding: 24px;
     height: 100vw;
-    overflow: auto;
 }
 
 .game-container.main-bg{
     background-image: url('../images/main-bg.png');
 }
+
+.game-container.third-bg{
+    background-image: url('../images/bg-3.png');
+}
 /* END CONTAINER */
+
+
 
 
 
@@ -55,6 +61,9 @@ body{
     background: var(--purple-gradient-color);
 }
 /* END BACKGROUND */
+
+
+
 
 
 
@@ -94,6 +103,12 @@ body{
     font-weight: 500;
     line-height: 20px;
     letter-spacing: 0.04em;
+}
+
+.text-sm {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
 }
 
 .text-xxs {
@@ -219,6 +234,7 @@ body{
 .z-index-3 {
     z-index: 3 !important;
 }
+
 /* END Z-INDEX */
 
 
@@ -468,7 +484,88 @@ body{
     bottom: 4%;
     width: 70px;
 }
+
 /* END MAIN ROOM */
+
+
+
+
+
+
+
+
+/* SHOP  */
+
+.btn-shop-2 {
+    position: fixed;
+    right: 7%;
+    top: 4%;
+    width: 67px;
+    z-index: 9;
+}
+
+.btn-close-2 {
+    position: fixed;
+    left: 3%;
+    top: 4%;
+    width: 50px;
+    z-index: 9;
+}
+.shop-screen .nav {
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+}
+
+.shop-screen .nav-tabs {
+    border: 0;
+}
+
+.shop-screen .nav-tabs .nav-item {
+    background:  var(--purple-gradient-color);
+    border-radius: 100px;
+    color : var(--white-color);
+    text-decoration: none;
+    font-weight: 700;
+    position: relative;
+    font-size: 14px;
+    border: 0;
+    box-shadow: 0 0 0 0;
+    min-width: 100px;
+    margin: 0 8px;
+    border: 3px solid var(--pink-soft-color);
+}
+
+.shop-screen .nav-tabs .nav-item::before{
+    content: url('../images/button-bg.svg');
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.shop-screen .nav-tabs .nav-link {
+    background: transparent !important;
+    width: 100%;
+    border: 0;
+    padding: 8px 22px;
+    -webkit-text-stroke: 0.5px var(--brown-color);
+    -webkit-text-fill-color: var(--white-color);
+    font-weight: 800;
+}
+
+.shop-screen .tab-content{
+    margin-top: 20px;
+}
+
+.shop-screen  .shop-item {
+    background: var(--black-color);
+    padding: 16px 8px;
+    border-radius: 20px;
+    margin: 6px;
+}
+/* END SHOP  */
+
+
 
 
 
