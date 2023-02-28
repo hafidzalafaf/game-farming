@@ -385,6 +385,88 @@ body{
     background: var(--purple-gradient-color);
     transform: rotate(-135deg);
 }
+
+.grass-1 {
+    position: absolute;
+    bottom: 10%;
+    right: 15%;
+}
+
+.grass-2 {
+    position: absolute;
+    bottom: 40%;
+    right: 15%;
+}
+
+.grass-3 {
+    position: absolute;
+    bottom: 10%;
+    right: 40%;
+}
+
+.grass-4 {
+    position: absolute;
+    bottom: 40%;
+    right: 40%;
+}
+
+.animal-1 {
+    position: absolute;
+    bottom: 16%;
+    width: 15%;
+    right: 7%;
+}
+
+.animal-2 {
+    position: absolute;
+    bottom: 50%;
+    width: 15%;
+    right: 7%;
+}
+
+.animal-3 {
+    position: absolute;
+    bottom: 16%;
+    width: 15%;
+    right: 33%;
+}
+
+.animal-4 {
+    position: absolute;
+    bottom: 50%;
+    width: 15%;
+    right: 33%;
+}
+
+.fence-1 {
+    position: absolute;
+    top: 5%;
+    right: 15%;
+}
+
+.fence-2 {
+    position: absolute;
+    top: 5%;
+    right: 30%;
+}
+
+.fence-3 {
+    position: absolute;
+    bottom: 0;
+    right: 15%;
+}
+
+.fence-4 {
+    position: absolute;
+    bottom: 0;
+    right: 30%;
+}
+
+.btn-shop {
+    position: absolute;
+    right: 4%;
+    bottom: 4%;
+}
 /* END MAIN ROOM */
 
 
