@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmin Game | Main Room</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="game-container main-room-screen position-relative py-2 px-3">
+        <div class="d-flex justify-content-between z-index-3 position-relative">
+            <div class="user-profile d-flex align-items-start radius-lg">
+                <div class="avatar position-relative d-flex flex-column align-items-center ">
+                    <img src="./assets/images/avatar.png" class="avatar-image" alt="avatar">
+                    <div class="name ">
+                        <div class="text-xxs text-gradient-2 text-bold">hafidz</div>
+                    </div>
+                </div>
+                <div class="ms-3">
+                    <div class="gradient-bg d-flex py-1 px-2 mb-2 radius-md">
+                        <img src="./assets/images/diamond.svg" alt="diamond">
+                        <span class="title-4 text-white ms-1">1255</span>
+                    </div>
+                    <div class="gradient-bg d-flex py-1 px-2 radius-md">
+                        <img src="./assets/images/bottle.png" alt="bottle">
+                        <span class="title-4 text-white ms-2">12</span>
+                    </div>
+                </div>
+            </div>
+            <div class="ms-3 d-flex align-items-center justify-content-end w-100">
+                <button class="btn-transaction btn-transparent me-3">
+                </button>
+                <button class="btn-bonus btn-transparent me-3">
+                </button>
+                <button class="btn-collected btn-transparent">
+                </button>
+            </div>
+        </div>
+        <div class="z-index-0">
+            <div class="cage-1">
+                <img src="./assets/images/cage-1.png" class="w-100" alt="cage-1">
+                <div class="label">
+                    Sheep
+                </div>
+            </div>
+            <div class="cage-2">
+                <img src="./assets/images/cage-2.png" class="w-100" alt="cage-1">
+                <div class="label">
+                    Cage
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="game-modal" id="game-modal">
+        <div class="modal-box">
+            <div class="head position-relative gradient-bg">
+                <p class="title-3 text-center text-pink mb-0">Cage</p>
+                <img src="./assets/images/close_btn.png" id="close-modal" class="modal-close-btn" alt="close button">
+            </div>
+            <div class="content px-3 py-3">
+                <p class="text-base text-pink mb-1">
+                    Price : 200K</p>
+                    <p class="text-base text-pink mb-4">
+                        Capacity : 15 Chicken</p>
+                    
+                <div class="d-flex justify-content-center">
+                    <button type="button" class="main-btn">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.js"
+        integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <script>
+        $('#show-modal').click(function () {
+            $('#game-modal').addClass('show')
+        })
+
+        $('#close-modal').click(function () {
+            $('#game-modal').removeClass('show')
+        })
+    </script>
+</body>
+
+</html>
