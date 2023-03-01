@@ -36,6 +36,9 @@ body{
     scrollbar-width: none; /* for Firefox */
 }
 
+a{
+    text-decoration: none;
+}
 
 
 /* CONTAINER */
