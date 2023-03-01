@@ -9,6 +9,10 @@
     --black-color: #343444;
     --purple-gradient-color : linear-gradient(130.35deg, #6345ED 17.35%, #DC39FC 78.23%);
     --pink-gradient-color: linear-gradient(130.35deg, #FFFFFF 17.35%, #DC39FC 78.23%);
+    --success-gradient-color : linear-gradient(130.35deg, #6EEB42 17.35%, #05991D 78.23%);
+    --warning-gradient-color : linear-gradient(130.35deg, #ED7745 17.35%, #FCBA39 78.23%); 
+    --primary-gradient-color : linear-gradient(130.35deg, #1170FF 17.35%, #39B6FC 78.23%);
+
 }
 
 html{
@@ -184,6 +188,66 @@ body{
     right: 5px;
 }
 
+.warning-btn {
+    background:  var(--warning-gradient-color);
+    border-radius: 100px;
+    padding: 4px 18px;
+    color : var(--white-color);
+    text-decoration: none;
+    font-weight: 600;
+    position: relative;
+    font-size: 10px;
+    border: 2px solid var(--pink-soft-color);
+    box-shadow: 0 0 0 0;
+}
+
+.warning::before{
+    content: url('../images/button-bg.svg');
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.success-btn {
+    background:  var(--success-gradient-color);
+    border-radius: 100px;
+    padding: 4px 18px;
+    color : var(--white-color);
+    text-decoration: none;
+    font-weight: 600;
+    position: relative;
+    font-size: 10px;
+    border: 2px solid var(--pink-soft-color);
+    box-shadow: 0 0 0 0;
+}
+
+.success::before{
+    content: url('../images/button-bg.svg');
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.primary-btn {
+    background:  var(--primary-gradient-color);
+    border-radius: 100px;
+    padding: 4px 18px;
+    color : var(--white-color);
+    text-decoration: none;
+    font-weight: 600;
+    position: relative;
+    font-size: 10px;
+    border: 2px solid var(--pink-soft-color);
+    box-shadow: 0 0 0 0;
+}
+
+.primary::before{
+    content: url('../images/button-bg.svg');
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
 .btn-transparent{
     background: transparent;
     border: 0;
@@ -215,6 +279,13 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+
+.btn-inventory {
+    position: absolute;
+    bottom: -12px;
+    left: 0;
+    right: 0;
 }
 /* MAIN BUTTON */
 
@@ -536,15 +607,16 @@ body{
     border: 3px solid var(--pink-soft-color);
 }
 
-.shop-screen .nav-tabs .nav-item::before{
+.shop-screen .nav-tabs .nav-link::before{
     content: url('../images/button-bg.svg');
     position: absolute;
-    top: 5px;
+    top: 1px;
     right: 5px;
 }
 
 .shop-screen .nav-tabs .nav-link {
     background: transparent !important;
+    position: relative;
     width: 100%;
     border: 0;
     padding: 8px 22px;
