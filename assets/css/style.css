@@ -700,6 +700,10 @@ body{
 .history-screen .history-item .img-icon{
     width: 38px;
 }
+
+.history-screen .history-ite .img-icon-milk{
+    width: 10px;
+}
 /* END HISTORY */
 
 
