@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmin Game | Shop Room</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="game-container couple-screen third-bg position-relative py-2 px-3 overflow-auto">
+        
+        <a href="/shop.html" class="btn-transparent btn-shop-2" >
+            <img src="./assets/images/shop.png" class="w-100" alt="shop button">
+        </a>
+        <a href="/main-room.html" class="btn-transparent btn-close-2">
+            <img src="./assets/images/close_btn.png" class="w-100" alt="shop button">
+        </a>
+
+        <div class="farming-wrap  me-5">
+            <div class="d-flex">
+                <div class="farming-item me-4">
+                    <div>
+                        <button class="warning-btn d-inline">
+                            On farm
+                        </button>
+                    </div>
+                    <img src="./assets/images/grass.png" class="d-block img-grass mx-5" alt="grass">
+
+                    <img src="./assets/images/collect-milk.png" class="center-image" alt="collect milk">
+
+                    <div class="d-flex justify-content-between">
+                        <span class="text-sm text-white text-bold">Sheep Farming</span>
+                        <button  class="collect-milk main-btn py-1">Collect</button>
+                    </div>
+                </div>
+                <div class="farming-item me-4">
+                    <img src="./assets/images/grass.png" class="d-block img-grass mx-5" alt="grass">
+
+                    <img src="./assets/images//add-2.png" class="center-image add" alt="collect milk">
+
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span class="text-sm text-white text-bold">Empty Land</span>
+                    </div>
+                </div>
+                <div class="farming-item me-4">
+                    <div>
+                        <button class="warning-btn d-inline">
+                            On farm
+                        </button>
+                    </div>
+                    <img src="./assets/images/grass.png" class="d-block img-grass mx-5" alt="grass">
+
+                    <img src="./assets/images/collect-milk.png" class="center-image" alt="collect milk">
+
+                    <div class="d-flex justify-content-between">
+                        <span class="text-sm text-white text-bold">Sheep Farming</span>
+                        <button  class="collect-milk main-btn py-1">Collect</button>
+                    </div>
+                </div>
+                <div class="farming-item me-4">
+                    <div>
+                        <button class="warning-btn d-inline">
+                            On farm
+                        </button>
+                    </div>
+                    <img src="./assets/images/grass.png" class="d-block img-grass mx-5" alt="grass">
+
+                    <img src="./assets/images/collect-milk.png" class="center-image" alt="collect milk">
+
+                    <div class="d-flex justify-content-between">
+                        <span class="text-sm text-white text-bold">Sheep Farming</span>
+                        <button  class="collect-milk main-btn py-1">Collect</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="game-modal" id="game-modal">
+        <div class="modal-box">
+            <div class="head position-relative gradient-bg">
+                <p class="title-3 text-center text-pink mb-0">Cage</p>
+                <img src="./assets/images/close_btn.png" id="close-modal" class="modal-close-btn" alt="close button">
+            </div>
+            <div class="content px-3 py-3">
+                <p class="text-base text-pink mb-1">
+                    Price : 200K</p>
+                    <p class="text-base text-pink mb-4">
+                        Capacity : 15 Chicken</p>
+                    
+                <div class="d-flex justify-content-center">
+                    <button type="button" class="main-btn">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.js"
+        integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <script>
+        $('.collect-milk').click(function () {
+            $('#game-modal').addClass('show')
+        })
+
+        $('#close-modal').click(function () {
+            $('#game-modal').removeClass('show')
+        })
+    </script>
+</body>
+
+</html>

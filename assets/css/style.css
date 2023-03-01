@@ -32,6 +32,8 @@ html{
 body{
     font-family: 'Montserrat', sans-serif;
     scroll-behavior: smooth;
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
 }
 
 
@@ -192,7 +194,7 @@ body{
     font-weight: 700;
     position: relative;
     font-size: 14px;
-    border: 0;
+    border: 2px solid var(--pink-soft-color);
     box-shadow: 0 0 0 0;
     min-width: 100px;
 }
@@ -764,6 +766,37 @@ body{
     right: 42px;
     bottom: 14px;
     width: 140px;
+}
+
+.couple-screen .farming-wrap{
+    overflow-x: auto;
+    margin-top: 90px;
+}
+
+.couple-screen .farming-item {
+    background: var(--black-color);
+    border-radius: 16px;
+    padding: 16px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.couple-screen .farming-item .img-grass {
+    width: 200px;
+}
+
+.couple-screen .center-image {
+    width: 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.couple-screen .center-image.add{
+    width: 67px;
 }
 
 /* END COUPLE */
