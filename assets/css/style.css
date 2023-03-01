@@ -115,6 +115,18 @@ body{
     line-height: 18px;
 }
 
+.text-xs {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.text-xms {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 14px;
+}
+
 .text-xxs {
     font-size: 6px;
     font-weight: 600;
@@ -640,7 +652,55 @@ body{
 
 
 
+/* HISTORY */
+.history-screen .transaction-wrap {
+    height: 95vw;
+}
 
+.history-screen .bg-transaction{ 
+    width: 90%;
+}
+
+.history-screen .header{ 
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+}
+
+.history-screen .header img {
+    width: 400px;
+}
+
+.history-screen .center-text {
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.history-screen .close-btn {
+    position: absolute;
+    right: 0;
+    width: 40px;
+    top: 10px;
+}
+
+.history-screen .content {
+    position: absolute;
+    top: 90px;
+    width: 75%;
+    max-height: 50%;
+    overflow-y: auto;
+}
+
+.history-screen .history-item{
+    border-bottom: 0.6px solid var(--white-color);
+}
+
+.history-screen .history-item .img-icon{
+    width: 38px;
+}
+/* END HISTORY */
 
 
 
