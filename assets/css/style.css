@@ -27,6 +27,8 @@ html{
     left: 0;
     bottom: 0;
     right: 0;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
 body{
@@ -36,8 +38,17 @@ body{
     scrollbar-width: none; /* for Firefox */
 }
 
-a{
-    text-decoration: none;
+a, button{
+    text-decoration: none !important;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
+
+a:hover{
+    color: white;
 }
 
 
@@ -807,7 +818,171 @@ a{
 
 
 @media (min-width: 992px) {
-    body{
-        display: none;
+    html{
+        transform: rotate(0);
+        transform-origin: unset;
+        width: 100%;
+        height: 100vh;
+        overflow-x: auto;
+        overflow-y: auto;
+        position: relative;
+        top: unset;
+        left: unset;
+        bottom: unset;
+        right: unset;
+    }
+
+    .game-container {
+        height: 100vh;
+    }
+
+    .home-screen{
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+
+    .home-screen .female-home {
+        bottom: 5vh;
+        right: 60vh;
+        left: unset;
+        width: 37vh;
+    }
+    
+    .home-screen .male-home {
+        bottom: 5vh;
+        right: 25vh;
+        width: 37vh;
+    }
+
+    /* TEXT */
+    .title-1 {
+        font-size: 56px;
+        line-height: 64px;
+    }
+
+    .title-2 {
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    .title-3 {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .title-4 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    /* END TEXT */
+
+    
+    .fence-2{
+        top: 20%;
+    }
+    .fence-1{
+        top: 20%;
+    }
+    .animal-2 {
+        bottom: 45%;
+    }
+    .animal-4 {
+        bottom: 45%;
+    }
+
+    .text-xms {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14px;
+    }
+    
+    .text-xxs {
+        font-size: 10px;
+        font-weight: 600;
+        line-height: 16px;
+    }
+    
+
+    .history-screen .transaction-wrap{
+        height: unset;
+        margin-top: 50px;
+    }
+
+    .history-screen .content {
+        top : 18%;
+        max-height: 66%;
+    }
+
+    .couple-screen .btn-bonus-2 {
+        width: 140px;
+    }
+
+    .couple-screen .timer {
+        width: 240px;
+    }
+
+    .couple-screen .timer .text-gradient-2 {
+        width: 240px;
+        font-size: 15px;
+        line-height: 20px;
+        top :2px;
+    }
+    .couple-screen .main-game {
+        height: calc(100vh - 100px);
+    }
+
+    .couple-screen .main-game .justify-content-evenly{
+        height: calc(100vh - 100px);
+    }
+
+
+    .couple-screen .img-animal {
+        height: 122px;
+    }
+
+    .couple-screen .cancel-btn {
+        width : 170px;
+        bottom: 30px;
+    }
+
+    .couple-screen .farm-btn {
+        width : 170px;
+        bottom: 30px;
+    }
+
+    .couple-screen .collect-btn {
+        width : 170px;
+        bottom: 30px;
+    }
+
+    .shop-screen .shop-item{
+        width: 160px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .shop-screen .shop-item img{
+        width: 140px;
+    }
+
+    .shop-screen .shop-item .d-flex img {
+        width: 20px;
+    }
+
+    .couple-screen .farming-wrap {
+        margin-right: 0 !important;
+    }
+
+    .couple-screen .farming-wrap .d-flex {
+        justify-content: center;
+        flex-wrap: wrap; 
+    }
+
+    .couple-screen .farming-item {
+        margin: 8px;
     }
 }
