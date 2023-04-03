@@ -53,6 +53,29 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <script>
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(showPositionCountry);
+   } else {
+      alert('Geolocation is not supported by this browser.');
+   }
+
+   function showPositionCountry(position) {
+      const latitude = position.coords.latitude;
+      const longitude = position.coords.longitude;
+      const url = `https://maps.googleapis.com/maps/api/geocode/json?latlng=${latitude},${longitude}&key=YOUR_API_KEY`;
+
+      fetch(url)
+         .then(response => response.json())
+         .then(data => {
+            const country = data.results[0].address_components.find(component =>
+               component.types.includes('country')
+            );
+            console.log(country.long_name);
+         })
+         .catch(error => console.error(error));
+   }
+    </script>
     
 </body>
 
